@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+@import "./vars";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: $font-1;
+}
+
+h1 {
+    @extend .text-style-2;
+}
+
+h2 {
+    @extend .text-style-8;
+}
+
+h3 {
+    margin: 16px 0 0;
+    @extend .text-style-3;
+}
+
+h4 {
+    @extend .text-style-7;
+}
+
+p {
+  margin: 10px 0;
+  @extend .text-style-5;
+}
+
+button {
+    margin: 10px 0;
+    @extend .text-style-4;
+}
+
+
+.text-style-1 {
+    font-size: 17px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $color-black;
+}
+
+.text-style-2 {
+    font-size: 40px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $color-grape-1;
+}
+
+.text-style-3 {
+    font-size: 20px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $color-grape-1;
+}
+
+.text-style-4 {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+.text-style-5 {
+    font-size: 14px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $color-black;
+}
+
+.text-style-6 {
+    font-size: 16px;
+    font-weight:400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $color-black;
+}
+
+
+.text-style-7 {
+    font-size: 20px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 2.41px;
+    color: $color-primary;
+}
+
+.text-style-8 {
+    font-size: 22px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $color-grape-1;
+}
+
+.text-style-9 {
+    font-size: 11px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $color-grape-1;
+}
+
+.text-style-10 {
+    font-size: 11px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $color-black;
+}
+
+.text-style-11 {
+    font-size: 12px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: $color-black;
+}
+
+.button--primary {
+    width: 100%;
+    height: 40px;
+    padding: 10px 75px 11px 70px;
+    background-color: $color-grape-1;
+    border: 0;
+    color: $color-white;
+}
+
+.button--circle {
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    border: none;
+    background-color: $color-grape-1;
+}
+
+@mixin desktop {
+    @media only screen and (min-width: 992px) and (max-width: 1920px) {
+      @content;
+    }
+}
+
+

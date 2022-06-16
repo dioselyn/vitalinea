@@ -1,0 +1,118 @@
+.banner-top {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    height: 775px;
+    margin: 0;
+    padding: 0 0 11px;
+    position: relative;
+    background: linear-gradient(to bottom, #f9e6e6, #ebacac);
+    box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.09);
+    z-index: 0;
+   
+
+    &__image {
+        z-index: 1;
+        position: absolute;
+        overflow: hidden;
+
+        &--fresa5 {
+            width: auto;
+            height: 186px;
+            top: 88px;
+            left: -93px;
+            transform: rotate(-42deg);
+            position: absolute;
+            overflow: hidden;
+           
+        }
+    
+        &--fresa8 {
+            width: 145px;
+            height: 243px;
+            top: -80px;
+            right: 0px;
+            -webkit-filter: blur(10px);
+            filter: blur(10px);
+           
+        }
+
+        &--bote {
+            top: 104px;
+            left: 96px;
+            width: 180px;
+            position: absolute;
+
+        }
+    }
+    
+    &__information {
+        display: inline-block;
+        margin: auto;
+        padding: 27px;
+       
+    }
+
+}
+
+.information__picker {
+    display: grid;
+    margin: 360px 0 0;
+    grid-template-columns: 42px 1fr 1fr 1fr;
+    column-gap: 6px;
+    color: $color-black;
+    font-weight: 500;
+    z-index: 1;
+    @extend .text-style-4;
+
+    &--1 {
+        height: 26px;
+        padding: 2px 0 11px;
+    }
+
+    &--2  {
+        height: 26px;
+        padding: 3px 20px 3px 18px;
+        border-radius: 11.5px;
+        background-color: rgba($color-secondary, 0.1);
+    }
+
+    &--3 {
+        height: 26px;
+        padding: 2px 13px 2px 15px;
+        border-radius: 11.5px;
+        border: solid 1px rgba($color-black, 0.14);
+    }
+
+    &--4 {
+        height: 26px;
+        padding: 2px 18px;
+        border-radius: 11.5px;
+        border: solid 1px rgba($color-black, 0.14);
+    }
+}
+
+.information__image {
+    display: grid;
+    margin: 24px 0 0;
+    grid-template-columns: 112px 112px;
+    place-items: center;
+    justify-content: space-evenly;
+    padding: 0 46px;
+}
+
+.banner-top__button {
+    display: flex;
+    margin: auto;
+    position: relative;
+}
+
+.button__arrow {
+    display: flex;
+    margin: auto;
+    width: 23px;
+    height: 22px;  
+    align-self: center;
+  
+}
+

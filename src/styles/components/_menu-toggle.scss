@@ -1,0 +1,36 @@
+.menu-toggle {
+    width: 44px;
+    transform: rotate(180deg);
+    align-self: center;
+    cursor: pointer;
+
+    &__line {
+        height: 1px;
+        margin: 7px 0;
+        background: $color-primary;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .line--1 {
+        width: 30px;
+    }
+    
+    .line--2 {
+        width: 36px;
+    }
+    
+    .line--3 {
+        width: 28px;
+    }
+    
+    .line--4 {
+        width: 32px;
+    }
+}
+
+
+
+
+
+
+

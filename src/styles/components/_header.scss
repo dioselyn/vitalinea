@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    top: 0;
+    padding: 18px 22px 12px 20px;
+    position: absolute;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, $color-white, $color-white-67);
+    transition: all 0.3s ease-in-out;
+    z-index: 2;
+}
