@@ -1,0 +1,30 @@
+.menu {
+    display: none;
+
+    @include desktop {
+        display: flex;
+        width: 100%;
+
+        & ul {
+         display: flex;
+         justify-content: space-between;
+        }
+
+        & li {
+            @include desktop {
+                display: inline-flex;   
+              
+            }
+            
+        }
+
+        &__link {
+            @include desktop {
+                display: flex;
+                padding-right: 32px;
+                align-self: center;
+            }
+            
+        }
+    }
+}

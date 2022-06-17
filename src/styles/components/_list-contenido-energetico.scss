@@ -1,0 +1,54 @@
+.contenido-energetico {
+    display: inline-block;
+    margin-bottom: 28px;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+
+    @include desktop {
+        margin: 170px 0 0 -230px;
+    }
+
+    &__image--fresa7 {
+        width: 90px;
+        top: 21px;
+        left: -35px;
+        position: absolute;
+        transform: rotate(10deg);
+        z-index: 0;
+
+        @include desktop {
+            width: 155px;
+            top: 72%;
+            left: -135%;
+            z-index: 1;
+        }
+       
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        column-gap: 20px;
+        background-color: #fafafa;
+        padding: 12px;
+        z-index: 1;
+    }
+
+    &__description p {
+        margin: 17px 0;
+        text-align: right;
+        color: $color-grape-1;
+        font-weight: 300;
+        @extend .text-style-11;
+    }
+
+    &__values p {
+        display: flex;
+        justify-self: start;
+        text-align: left;
+        color: $color-grape-1;
+        font-weight: 300;
+        @extend .text-style-4;
+    }
+}

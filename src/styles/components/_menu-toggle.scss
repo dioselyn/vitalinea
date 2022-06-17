@@ -26,6 +26,10 @@
     .line--4 {
         width: 32px;
     }
+
+    @include desktop {
+        display: none;
+    }
 }
 
 

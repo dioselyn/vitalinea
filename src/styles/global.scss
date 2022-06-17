@@ -9,13 +9,30 @@ html {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    @extend .text-style-6;
+}
+
+a:hover {
+    color: $color-primary;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+  margin: 0;
+}
+
 body {
     margin: 0;
-    font-family: $font-1;
+    font-family: $font-family-1;
 }
 
 h1 {
-    @extend .text-style-2;
+    margin: 12px 0;
 }
 
 h2 {
@@ -23,8 +40,7 @@ h2 {
 }
 
 h3 {
-    margin: 16px 0 0;
-    @extend .text-style-3;
+    margin: 20px 0 10px;
 }
 
 h4 {
@@ -32,8 +48,7 @@ h4 {
 }
 
 p {
-  margin: 10px 0;
-  @extend .text-style-5;
+  @extend .text-style-4;
 }
 
 button {
@@ -52,16 +67,6 @@ button {
     color: $color-black;
 }
 
-.text-style-2 {
-    font-size: 40px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: $color-grape-1;
-}
-
 .text-style-3 {
     font-size: 20px;
     font-weight: 300;
@@ -74,23 +79,12 @@ button {
 
 .text-style-4 {
     font-size: 14px;
-    font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
-    text-align: center;
 }
 
-.text-style-5 {
-    font-size: 14px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: $color-black;
-}
 
 .text-style-6 {
     font-size: 16px;
@@ -145,17 +139,15 @@ button {
 
 .text-style-11 {
     font-size: 12px;
-    font-weight: 400;
     font-stretch: normal;
     font-style: normal;
-    line-height: normal;
     letter-spacing: normal;
     text-align: center;
-    color: $color-black;
 }
 
+
+
 .button--primary {
-    width: 100%;
     height: 40px;
     padding: 10px 75px 11px 70px;
     background-color: $color-grape-1;
@@ -172,7 +164,7 @@ button {
 }
 
 @mixin desktop {
-    @media only screen and (min-width: 992px) and (max-width: 1920px) {
+    @media only screen and (min-width: 980px) and (max-width: 1920px) {
       @content;
     }
 }

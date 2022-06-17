@@ -1,0 +1,39 @@
+.section__contenido-energetico {
+    @include desktop {
+        display: grid;
+        height: 764px;
+        grid-template-columns: 0.8fr 492px;
+        padding: 142px 334px 0;
+        position: relative;
+    }
+   
+    .image--fresa8 {
+        display: none;
+        @include desktop {
+            display: block;
+            width: 190px;
+            height: 403px;
+            object-fit: contain;
+            -webkit-filter: blur(5px);
+            filter: blur(5px);
+            bottom: -30%;
+            right: 0;
+            position: absolute;
+            z-index: 1;
+        }
+    }
+
+    .image--fresa9 {
+        display: none;
+        @include desktop {
+            display: block;
+            width: 139px;
+            object-fit: contain;
+            bottom: -15%;
+            left: 252px;
+            position: absolute;
+            z-index: 1;
+           
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.footer {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    padding: 27px 10px 27px 11px;
+
+    @include desktop {
+        padding-top: 47px;
+    }
+
+
+    &__logo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text {
+        text-align: center;
+
+        @include desktop {
+            margin: -38px 0 10px 80px;
+            text-align: left;
+        }
+       
+
+        &--1 {
+            @extend .text-style-10;
+        }
+
+        &--2 {
+            margin-top: -10px;
+            @extend .text-style-11;
+        }
+    }
+
+    
+
+    .logo--danone {
+        width: 47px;
+        height: 47px;
+        align-self: center;
+    }
+
+    .logo--footer {
+        width: 79px;
+        height: 30px;
+        align-self: center;
+    }
+}

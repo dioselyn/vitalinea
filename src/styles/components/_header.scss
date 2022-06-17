@@ -10,5 +10,12 @@
     overflow: hidden;
     background-image: linear-gradient(to bottom, $color-white, $color-white-67);
     transition: all 0.3s ease-in-out;
-    z-index: 2;
+    z-index: 10;
+
+    @include desktop {
+        display: grid;
+        grid-template-columns: 2fr 2fr 0.5fr;
+        height: 100px;
+        padding: 25px 96px 25px 119px;
+    }
 }

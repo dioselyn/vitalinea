@@ -1,0 +1,93 @@
+.info {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+
+    @include desktop {
+       
+    }
+
+    &__image--fresa5 {
+        display: none;
+
+        @include desktop {
+            display: block;
+            width: 260px;
+            object-fit: contain;
+            top: 0px;
+            left: -320px;
+            position: absolute;        }
+    }
+
+
+    &__image--fresa6 {
+        width: 59px;
+        height: 132px;
+        top: 104px;
+        right: 0;
+        position: absolute;
+        -webkit-filter: blur(2px);
+        filter: blur(2px);
+
+        @include desktop {
+            width: 180px;
+            top: -100px;
+            right: -105%;
+            height: auto;
+            overflow: hidden;
+        }
+    }
+
+    &__title {
+        width: 274px;
+        margin: 77px 61px 28px 0;
+
+        @include desktop {
+            width: 438px;
+            margin-top: -60px;
+            font-size: $--m;
+        }
+    }
+
+    &__text {
+        display: block;
+        margin-top: 21px;
+        font-weight: 500;
+        text-align: left;
+        @extend .text-style-4;
+        
+        & span {
+            font-weight: 300;
+        }
+
+        @include desktop {
+            width: 265px;
+            font-weight: bold;
+        }
+
+       
+    }
+
+    &__text--2 {
+        display: block;
+        margin-top: 21px;
+        font-weight: 500;
+        text-align: left;
+        @extend .text-style-4;
+
+        & span {
+            font-weight: 300;
+        }
+
+        @include desktop {
+            width: 241px;
+            font-weight: bold;
+        }
+    }
+
+
+}
+
+

@@ -1,0 +1,15 @@
+.social-icon {
+    display: none;
+    @include desktop {
+        width: 120px;
+        display: flex;
+        justify-content: space-between;
+
+        &__icon {
+            display: flex;
+            align-self: center;
+            width: 31.8px;
+            height: 31.8px;
+        }
+    }
+}

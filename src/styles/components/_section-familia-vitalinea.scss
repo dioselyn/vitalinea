@@ -1,0 +1,105 @@
+.familia-vitalinea {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    height: 504px;
+    padding: 20px;
+    position: relative;
+    background-image: url("../../assets/background/bg-familia-vitalinea.png");
+
+    @include desktop {
+        padding: 95px 131px;
+        height: 719px;
+    }
+   
+
+    &__title {
+        text-align: center;
+
+        @include desktop {
+            font-size: $--lg;
+        }
+    }
+
+    &__image {
+        position: absolute;
+
+        &.image--1 {
+            width: 178px;
+            height: 106px;
+            bottom: 120px;
+
+            @include desktop {
+                top: 412px;
+                width: 356px;
+                height: auto;
+            }
+           
+        }
+
+        &.image--2 {
+            width: 114px;
+            height: 134px;
+            bottom: 120px;
+            left: 203px;
+
+            @include desktop {
+                width: 228px;
+                height: auto;
+                left: 625px;
+            }
+        }
+
+        &.image--3 {
+            height: 207px;
+            bottom: 120px;
+            right: -102px;
+
+            @include desktop {
+                width: 296px;
+                height: auto;
+                left: 991px;
+            }
+        }
+    }
+
+    &__span {
+        display: inline-block;
+        margin:  290px 0 101px;
+        padding: 13px 0;
+        @extend .text-style-9;
+
+        @include desktop {
+            font-size: $--sm;
+        }
+
+        &.span--1 {
+            margin: 288px 70px 0 51px;
+
+            @include desktop {
+                margin: 386px 274px 0 90px;
+                font-size: $--sm;
+            }
+        }
+
+        &.span--2 {
+            @include desktop {
+                width: fit-content;
+                margin-right: 150px;
+                font-size: $--sm;
+            }
+        }
+
+        &.span--3 {
+            right: -68px;
+            position: absolute;
+
+            @include desktop {
+                width: fit-content;
+                font-size: $--sm;
+                position: relative;
+            
+            }
+        }
+    }
+}
