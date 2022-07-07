@@ -1,0 +1,28 @@
+.menu-mobile {
+    padding: 78px 4px;
+    max-width: 100%;
+
+    @include desktop {
+        display: none;
+    }
+
+    &__link {
+        width: 300px;
+        padding: 12px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        background-color: #ebacac;
+
+        & a {
+            color: $color-primary;
+        }
+
+        &:hover {
+            background-color: $color-primary;
+        }
+
+        &:hover a {
+            color: $color-white;
+        }
+    }
+}

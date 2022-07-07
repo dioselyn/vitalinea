@@ -25,6 +25,7 @@ function BannerTop() {
       <img
         src={fresa4}
         className="banner-top__image banner-top__image--fresa4"
+        data-aos="fade-up"
       />
       <img
         src={fresa5}
@@ -35,7 +36,10 @@ function BannerTop() {
         className="banner-top__image banner-top__image--fresa8"
       />
       <div className="banner-top__section">
-        <img src={bote} className="banner-top__image banner-top__image--bote" />
+        <img
+          src={bote}
+          className="banner-top__image banner-top__image--bote animated animatedFade fadeInUp"
+        />
       </div>
 
       <div className="banner-top__information">

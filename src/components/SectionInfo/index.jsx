@@ -1,12 +1,8 @@
 import React from "react";
-import fresa5 from "../../assets/img/img-fresas-5.png";
-import fresa6 from "../../assets/img/img-fresas-6.png";
 
 function SectioInfo() {
   return (
     <section className="info">
-      <img src={fresa5} className="info__image--fresa5" />
-      <img src={fresa6} className="info__image--fresa6" />
       <h4 className="info__title">Información nutrimental</h4>
       <p className="info__text">
         Vitalínea® Bebible Guayaba 217gr <br></br> Valor promedio por porción de

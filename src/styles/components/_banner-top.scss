@@ -39,6 +39,9 @@
         overflow: hidden;
 
         &--fresa2 {
+            display: none;
+            width: 145px;
+            height: auto;
             overflow: hidden;
 
             @include desktop {
@@ -46,8 +49,7 @@
                 width: 471px;
                 height: auto;
                 top: 0;
-                right: 30px;
-                overflow: hidden;
+                right: 300px;
             }
         }
 
@@ -89,8 +91,8 @@
             overflow: hidden;
 
             @include desktop {
-                top: -36px;
-                left: 204px;
+                top: -40px;
+                left: 180px;
             }
            
         }
@@ -102,6 +104,7 @@
             right: 0px;
             -webkit-filter: blur(10px);
             filter: blur(10px);
+            overflow: hidden;
 
             @include desktop {
                 display: none;

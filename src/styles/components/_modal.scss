@@ -1,0 +1,51 @@
+.modal {
+    z-index: 99;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+   
+    @include desktop {
+        display: none;
+    }
+
+    &__background {
+        background: rgba(255,255,255, 0.8);
+        background-image: url(../../assets/img/img-fresas-9.png);
+        background-repeat: no-repeat;
+        background-size: 30%;
+        background-position: bottom right;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        z-index: 99;
+      }
+
+    &__close {
+        top: 24px;
+        right: 24px;
+        border-radius: 50%;
+        border: 1px solid $color-primary;
+        position: absolute;
+        font-size: $--m;
+        color: $color-primary;
+      
+        &:hover {
+            color: $color-secondary;
+            background-color: $color-white-67;
+            cursor: pointer;
+        }
+      }
+
+    
+}
+
+
+
+ 

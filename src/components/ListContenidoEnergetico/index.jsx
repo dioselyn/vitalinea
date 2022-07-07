@@ -1,10 +1,8 @@
 import React from "react";
-import fresa7 from "../../assets/img/img-fresas-7.png";
 
 function ListContenidoEnergetico() {
   return (
     <div className="contenido-energetico">
-      <img src={fresa7} className="contenido-energetico__image--fresa7" />
       <div className="contenido-energetico__content">
         <div className="contenido-energetico__description">
           <p>Contenido energético kJ/kcal</p>

@@ -1,27 +1,30 @@
 .contenido-energetico {
-    display: inline-block;
+    display: block;
     margin-bottom: 28px;
     width: 100%;
     padding: 20px;
     position: relative;
+    z-index: 0;
 
     @include desktop {
         margin: 170px 0 0 -230px;
     }
 
     &__image--fresa7 {
+        display: block;
         width: 90px;
-        top: 21px;
-        left: -35px;
+        top: 1150px;
+        left: -15px;
         position: absolute;
         transform: rotate(10deg);
-        z-index: 0;
+        z-index: 1;
+
 
         @include desktop {
+            display: block;
             width: 155px;
             top: 72%;
-            left: -135%;
-            z-index: 1;
+            left: -20px;
         }
        
     }
